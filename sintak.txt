@@ -1,0 +1,428 @@
+
+user@DESKTOP-L24SJKC MINGW64 ~
+$ dir
+Adobe\ Flash\ Builder\ 4.6
+AppData
+Application\ Data
+bdt17
+Contacts
+Cookies
+Desktop
+Documents
+Downloads
+Favorites
+Intel
+IntelGraphicsProfiles
+Links
+Local\ Settings
+Music
+My\ Documents
+NetHood
+NTUSER.DAT
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TM.blf
+NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{77a2c7ed-26f0-11e5-80da-e41d2d741090}.TMContainer00000000000000000002.regtrans-ms
+NTUSER.DAT{b58c8805-623a-11e6-9bc6-c4bb168a6a14}.TM.blf
+NTUSER.DAT{b58c8805-623a-11e6-9bc6-c4bb168a6a14}.TMContainer00000000000000000001.regtrans-ms
+NTUSER.DAT{b58c8805-623a-11e6-9bc6-c4bb168a6a14}.TMContainer00000000000000000002.regtrans-ms
+ntuser.ini
+OneDrive
+Pictures
+PrintHood
+Recent
+Saved\ Games
+Searches
+SendTo
+Start\ Menu
+Templates
+Videos
+
+user@DESKTOP-L24SJKC MINGW64 ~
+$ cd bdt17
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17
+$ ls index.html
+index.html
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17
+$ git inid
+git: 'inid' is not a git command. See 'git --help'.
+
+Did you mean this?
+        init
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17
+$ git init
+Initialized empty Git repository in C:/Users/user/bdt17/.git/
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ pwd
+/c/Users/user/bdt17
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ ls -al
+total 26
+drwxr-xr-x 1 user 197609  0 May 13 10:16 ./
+drwxr-xr-x 1 user 197609  0 May 13 10:16 ../
+drwxr-xr-x 1 user 197609  0 May 13 10:16 .git/
+-rw-r--r-- 1 user 197609 36 May 13 10:15 index.html
+-rw-r--r-- 1 user 197609 36 May 13 10:09 index.html.txt
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git add .
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+        new file:   index.html.txt
+
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git commit - m "added new file'
+>
+> .
+> added new file'
+> '
+> "
+error: pathspec '-' did not match any file(s) known to git.
+error: pathspec 'm' did not match any file(s) known to git.
+error: pathspec 'added new file'
+
+.
+added new file'
+'
+' did not match any file(s) known to git.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git commit -m 'added new file'
+[master (root-commit) db30585] added new file
+ 2 files changed, 10 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 index.html.txt
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git branch
+* master
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout -b tambahcotent
+Switched to a new branch 'tambahcotent'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git branch
+  master
+* tambahcotent
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git status
+On branch tambahcotent
+nothing to commit, working tree clean
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git status
+On branch tambahcotent
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git add .
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git status
+On branch tambahcotent
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.html
+
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git commit -m 'tambah paragraph'
+[tambahcotent b4eb132] tambah paragraph
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git branch
+  master
+* tambahcotent
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git checkout master
+Switched to branch 'master'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout tambahcontent
+error: pathspec 'tambahcontent' did not match any file(s) known to git.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout master
+Already on 'master'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git add .
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ dir
+index.html  index.html.txt
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git log
+commit db30585d0fa1fdaaf5410f0546abd719ad29443b (HEAD -> master)
+Author: Ayu Widiari <widiariayyu@gmail.com>
+Date:   Sat May 13 10:17:59 2017 +0800
+
+    added new file
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git branch
+* master
+  tambahcotent
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout tambahcontent
+error: pathspec 'tambahcontent' did not match any file(s) known to git.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git branch checkout
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout tambahcontent
+error: pathspec 'tambahcontent' did not match any file(s) known to git.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout tambahcotent
+Switched to branch 'tambahcotent'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git add .
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git commit -m 'tambah'
+On branch tambahcotent
+nothing to commit, working tree clean
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git merge tambahcotent
+Already up-to-date.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git add .
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git commit -m "tambahtulisan"
+[tambahcotent 15df416] tambahtulisan
+ 1 file changed, 1 insertion(+)
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git merge tambahcotent
+Already up-to-date.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git merge master
+Already up-to-date.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git checkout master
+Switched to branch 'master'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git merge tambahcotent
+Updating db30585..15df416
+Fast-forward
+ index.html | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git checkout tambahcotent
+Switched to branch 'tambahcotent'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git merge master
+Already up-to-date.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git status
+On branch tambahcotent
+nothing to commit, working tree clean
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ -ssh-keygen -t rasa -b 4096 -C "widiariayyu@gmail.com"
+bash: -ssh-keygen: command not found
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ ssh-keygen -t rasa -b 4096 -C "widiariayyu@gmail.com"
+unknown key type rasa
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ ssh-keygen -t rsa -b 4096 -C "widiariayyu@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/user/.ssh/id_rsa):
+Created directory '/c/Users/user/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/user/.ssh/id_rsa.
+Your public key has been saved in /c/Users/user/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:tes/FdysraxkDlyxAfG+M+/5nxL2IrOnwGA6BpVluVo widiariayyu@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|       o. o.     |
+|      +.   o     |
+|     o  . . +. o |
+|    .  E . o +o o|
+|   .  ooS . +  + |
+|    ..o o. o +o .|
+|     +   o+ Boo. |
+|    . .  ..B.Boo.|
+|          .+X+*o+|
++----[SHA256]-----+
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ ssh -T git@github.com
+ssh: connect to host github.com port 22: Connection timed out
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git remote add origin github.com:widiariayyu/bdt17.git
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git checkout tambahcotent
+Already on 'tambahcotent'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (tambahcotent)
+$ git checkout master
+Switched to branch 'master'
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ ssh-keygen -t rsa -b 4096 -C "widiariayyu@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/user/.ssh/id_rsa):
+/c/Users/user/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ ssh-keygen -t rsa -b 4096 -C "widiariayyu@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/user/.ssh/id_rsa):
+/c/Users/user/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/user/.ssh/id_rsa.
+Your public key has been saved in /c/Users/user/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:Ne5AE5SEmTm0MVKgjjupgjpKw4uY+4Za0smJn6PhoGM widiariayyu@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|    o+=B+.       |
+|   . .*+..       |
+|  .   ..o o      |
+| o     . + .     |
+|. .     S .      |
+|.* o     o       |
+|X=*       .      |
+|#E=.             |
+|^X+.             |
++----[SHA256]-----+
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ ssh-keygen -t rsa -b 4096 -C "widiariayyu@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/user/.ssh/id_rsa):
+/c/Users/user/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/user/.ssh/id_rsa.
+Your public key has been saved in /c/Users/user/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:7BkVYs/GIH8zZ4vddd/tGHsos2CHgebnB8uqZG/cnac widiariayyu@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|      . + .      |
+|       + * .     |
+|        . X o   o|
+|       . = B o .=|
+|        S o o o +|
+|       + o.o   * |
+|      o.+o=++.+ o|
+|     o .o++o++.. |
+|      .oo...Eo   |
++----[SHA256]-----+
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git remossh: connect to host github.com port 22: Connection timed out
+t
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ ssh -T git@github.com
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git ^C
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git remote add origin github.com:widiariayyu@gmail/bdt17.git
+fatal: remote origin already exists.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git remote -v
+origin  github.com:widiariayyu/bdt17.git (fetch)
+origin  github.com:widiariayyu/bdt17.git (push)
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git push -u origin master
+ssh: connect to host github.com port 22: Connection timed out
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git remote set-url origin "https://github.com/widiariayyu/bdt17.git"
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$ git push -u origin master
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (9/9), 847 bytes | 0 bytes/s, done.
+Total 9 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/widiariayyu/bdt17.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+user@DESKTOP-L24SJKC MINGW64 ~/bdt17 (master)
+$
