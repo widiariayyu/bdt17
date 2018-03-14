@@ -18,7 +18,17 @@ var calculator = {
 		return hasil;
 	},
 	samadengan : function(a,b){
-		//jika lebih besar a
+		//jika lebih besar a b
+		if(a > b){
+			return a + ' lebih besar dari ' + b;
+		}
+		else if(a < b){
+			return a + ' lebih kecil dari ' + b;
+		} else{
+			return a + ' sama besar dengan ' + b;
+		}
+		samadengan : function(a,b){
+		//jika lebih besar a b
 		if(a > b){
 			return a + ' lebih besar dari ' + b;
 		}
